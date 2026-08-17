@@ -20,7 +20,7 @@ class ProviderStore(private val context: Context) {
 
     val providersFlow: Flow<List<ProviderConfig>> =
         context.providersDataStore.data.map { prefs ->
-            val raw = prefs[key] ?: return@map emptyList()
+            val raw = prefs[key] ?: return@map DefaultProviders.seed
             runCatching { json.decodeFromString(ListSerializer(ProviderConfig.serializer()), raw) }
                 .getOrDefault(emptyList())
         }

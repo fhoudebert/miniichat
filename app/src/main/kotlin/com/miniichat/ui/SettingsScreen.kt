@@ -159,7 +159,7 @@ fun SettingsScreen(
                             },
                             modifier = Modifier.fillMaxWidth(),
                             textStyle = LocalTextStyle.current.copy(
-                                color = LocalContentColor.current,
+                                color = MaterialTheme.colorScheme.onSurface,
                                 fontSize = 14.sp,
                                 lineHeight = 20.sp
                             ),

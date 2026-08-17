@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!--
+      Autorise le HTTP en clair (cleartext) : nécessaire pour interroger
+      des serveurs LLM auto-hébergés sur le réseau local (Ollama, LM Studio, etc.)
+      comme documenté dans le README, dont l'IP/host n'est pas connue à l'avance.
+      Les appels HTTPS restent chiffrés normalement, ceci ne fait que lever
+      le blocage cleartext imposé par défaut depuis Android 9 (API 28+).
+    -->
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

@@ -269,7 +269,7 @@ fun AssistantEditor(
                                 onValueChange = { name = it },
                                 modifier = Modifier.fillMaxWidth(),
                                 textStyle = LocalTextStyle.current.copy(
-                                    color = LocalContentColor.current,
+                                    color = MaterialTheme.colorScheme.onSurface,
                                     fontSize = 14.sp
                                 ),
                                 cursorBrush = SolidColor(MaterialTheme.colorScheme.primary),
@@ -288,7 +288,7 @@ fun AssistantEditor(
                         onValueChange = { avatar = it },
                         modifier = Modifier.fillMaxWidth(),
                         textStyle = LocalTextStyle.current.copy(
-                            color = LocalContentColor.current,
+                            color = MaterialTheme.colorScheme.onSurface,
                             fontSize = 16.sp
                         ),
                         cursorBrush = SolidColor(MaterialTheme.colorScheme.primary),
@@ -305,7 +305,7 @@ fun AssistantEditor(
                         onValueChange = { systemPrompt = it },
                         modifier = Modifier.fillMaxWidth(),
                         textStyle = LocalTextStyle.current.copy(
-                            color = LocalContentColor.current,
+                            color = MaterialTheme.colorScheme.onSurface,
                             fontSize = 13.sp,
                             lineHeight = 18.sp
                         ),

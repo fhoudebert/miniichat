@@ -47,6 +47,10 @@ Other compatible endpoints:
 
 > The base URL field auto-appends `/v1` if you forget it. For Ollama / LM Studio on a real device, replace `10.0.2.2` (emulator-only) with your computer's LAN IP.
 
+> ⚠️ Cleartext (HTTP) traffic is allowed app-wide to support local LLM servers without TLS.
+> Only point this app at HTTP endpoints you trust on networks you trust (e.g. your own LAN) —
+> traffic to those endpoints is unencrypted.
+
 ## Build
 
 The repo includes a GitHub Actions workflow that produces signed `release` and `debug` APKs on every push.

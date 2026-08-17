@@ -217,7 +217,7 @@ fun InputBar(
                     onValueChange = onValueChange,
                     modifier = Modifier.fillMaxWidth(),
                     textStyle = LocalTextStyle.current.copy(
-                        color = LocalContentColor.current,
+                        color = MaterialTheme.colorScheme.onSurface,
                         fontSize = 16.sp,
                         lineHeight = 22.sp
                     ),

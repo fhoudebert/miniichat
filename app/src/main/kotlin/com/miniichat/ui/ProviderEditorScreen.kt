@@ -291,7 +291,7 @@ private fun EditableValue(
             onValueChange = onChange,
             modifier = Modifier.fillMaxWidth(),
             textStyle = LocalTextStyle.current.copy(
-                color = LocalContentColor.current,
+                color = MaterialTheme.colorScheme.onSurface,
                 fontSize = 14.sp,
                 fontFamily = if (monospace) FontFamily.Monospace else FontFamily.Default
             ),
@@ -338,7 +338,7 @@ private fun KeyValueEditor(
                             onChange(nextList)
                         },
                         textStyle = LocalTextStyle.current.copy(
-                            color = LocalContentColor.current,
+                            color = MaterialTheme.colorScheme.onSurface,
                             fontSize = 13.sp,
                             fontFamily = FontFamily.Monospace
                         ),
@@ -368,7 +368,7 @@ private fun KeyValueEditor(
                             onChange(nextList)
                         },
                         textStyle = LocalTextStyle.current.copy(
-                            color = LocalContentColor.current,
+                            color = MaterialTheme.colorScheme.onSurface,
                             fontSize = 13.sp,
                             fontFamily = FontFamily.Monospace
                         ),

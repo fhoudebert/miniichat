@@ -241,7 +241,7 @@ private fun ProviderCard(
                         onValueChange = { manualInput = it },
                         modifier = Modifier.weight(1f),
                         textStyle = LocalTextStyle.current.copy(
-                            color = LocalContentColor.current,
+                            color = MaterialTheme.colorScheme.onSurface,
                             fontSize = 14.sp,
                             fontFamily = FontFamily.Monospace
                         ),

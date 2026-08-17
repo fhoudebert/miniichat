@@ -9,9 +9,9 @@ captures/
 .cxx/
 *.log
 *.apk
-release.keystore
 !gradle/wrapper/gradle-wrapper.jar
 .kotlin/
 *.jks
-
+app/src/main/kotlin/com/miniichat/data/DefaultProviders.kt
+release.keystore
 
